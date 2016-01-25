@@ -23,26 +23,26 @@ public class ServiceImpl implements Service {
     }
 
     public String getAnswerWithLocale(){
-        return getResourceBundle().getString(getPartOfDay());
+        return getResourceBundle().getString(getPartOfDay(getCurrentTime()));
     }
 
-    public String getPartOfDay(){
+    public String getPartOfDay(LocalTime currentTime){
         String partOfDay="";
-        LocalTime currentTime=getCurrentTime();
-        if(isTimeBeetween(LocalTime.of(6, 00), LocalTime.of(9, 00), currentTime))
+        if(isTimeBeetween(LocalTime.of(6,00), LocalTime.of(9, 00), currentTime))
             partOfDay="morning";
-        if(isTimeBeetween(LocalTime.of(9, 00), LocalTime.of(19, 00), currentTime))
+        if(isTimeBeetween(LocalTime.of(9,00), LocalTime.of(19, 00), currentTime))
             partOfDay="day";
-        if(isTimeBeetween(LocalTime.of(19, 00), LocalTime.of(23, 00), currentTime))
+        if(isTimeBeetween(LocalTime.of(19,00), LocalTime.of(23, 00), currentTime))
             partOfDay="evening";
-        if(isTimeBeetween(LocalTime.of(23, 00), LocalTime.of(9, 00), currentTime))
+        if( (isTimeBeetween(LocalTime.of(23,00), LocalTime.of(23,59,59), currentTime))
+                ||(isTimeBeetween(LocalTime.of(0, 00), LocalTime.of(06, 00), currentTime)))
             partOfDay="night";
         logger.info("Current part of day is: {}", partOfDay);
         return partOfDay;
     }
 
     public boolean isTimeBeetween(LocalTime after, LocalTime before, LocalTime currentTime){
-        return currentTime.isAfter(after)&currentTime.isBefore(before);
+        return currentTime.plusNanos(1).isAfter(after)&currentTime.isBefore(before);
     }
 
     private ResourceBundle getResourceBundle(){

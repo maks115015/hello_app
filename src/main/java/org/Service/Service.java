@@ -7,6 +7,6 @@ import java.time.LocalTime;
  */
 public interface Service {
      boolean isTimeBeetween(LocalTime after, LocalTime before, LocalTime currentTime);
-     String getPartOfDay();
+     String getPartOfDay(LocalTime currentTime);
      String getAnswerWithLocale();
 }
