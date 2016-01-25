@@ -1,4 +1,4 @@
-package org;
+package org.Service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,10 +14,12 @@ public class ServiceImpl implements Service {
 
     private static final Logger logger = LoggerFactory.getLogger(ServiceImpl.class);
 
-    public ResourceBundle getResourceBundle(){
-        ResourceBundle resourceBundle=ResourceBundle.getBundle("message", Locale.getDefault());
-        logger.info("Current locale is: {}",resourceBundle.getLocale().toString());
-        return resourceBundle;
+    private static final ServiceImpl instance = new ServiceImpl();
+
+    private ServiceImpl(){}
+
+    public static ServiceImpl getInstance(){
+        return instance;
     }
 
     public String getAnswerWithLocale(){
@@ -35,7 +37,7 @@ public class ServiceImpl implements Service {
             partOfDay="evening";
         if(isTimeBeetween(LocalTime.of(23, 00), LocalTime.of(9, 00), currentTime))
             partOfDay="night";
-        logger.info("Current part of day is: {}",partOfDay);
+        logger.info("Current part of day is: {}", partOfDay);
         return partOfDay;
     }
 
@@ -43,9 +45,15 @@ public class ServiceImpl implements Service {
         return currentTime.isAfter(after)&currentTime.isBefore(before);
     }
 
-    public LocalTime getCurrentTime(){
+    private ResourceBundle getResourceBundle(){
+        ResourceBundle resourceBundle=ResourceBundle.getBundle("message", Locale.getDefault());
+        logger.warn("Current locale is: {}", resourceBundle.getLocale().toString());
+        return resourceBundle;
+    }
+
+    private LocalTime getCurrentTime(){
         LocalTime localTime=LocalTime.now();
-        logger.info("Current time is: {}",localTime.toString());
+        logger.info("Current time is: {}", localTime.toString());
         return localTime;
     }
 }

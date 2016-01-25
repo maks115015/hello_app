@@ -1,5 +1,7 @@
 package org;
 
+import org.Service.Service;
+import org.Service.ServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,13 +11,9 @@ import org.slf4j.LoggerFactory;
 public class App {
     private static final Logger logger = LoggerFactory.getLogger(App.class);
 
-
     public static void main( String[] args ) {
-        Service service=new ServiceImpl();
-        System.out.println(service.getResourceBundle().getString("title"));
-        System.out.println("________________________________________________________________________");
-        System.out.println();
-        logger.info(service.getAnswerWithLocale());
+        Service service=ServiceImpl.getInstance();
+        logger.warn(service.getAnswerWithLocale());
     }
 
 }

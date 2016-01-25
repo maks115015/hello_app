@@ -1,5 +1,7 @@
 package org;
 
+import org.Service.Service;
+import org.Service.ServiceImpl;
 import org.junit.Test;
 
 /**
@@ -7,20 +9,13 @@ import org.junit.Test;
  */
 public class ServiceTest {
 
-    @Test
-    public void testGetResourceBundle() throws Exception {
-
-    }
+    Service service=ServiceImpl.getInstance();
 
     @Test
     public void testIsTimeBeetween() throws Exception {
 
     }
 
-    @Test
-    public void testGetCurrentTime() throws Exception {
-
-    }
 
     @Test
     public void testGetPartOfDay() throws Exception {
