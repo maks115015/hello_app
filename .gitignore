@@ -1,3 +1,5 @@
 /test.iml
 /.idea
+/dependency-reduced-pom.xml
+/.gitignore
 /target
