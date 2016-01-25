@@ -18,20 +18,20 @@ public class ServiceTest {
 
     @Test
     public void testIsTimeBeetweenShouldReturnTrue(){
-        Boolean isBeetweenT=service.isTimeBeetween(LocalTime.of(5, 59,59), LocalTime.of(9, 00), LocalTime.of(6, 0));
+        Boolean isBeetweenT=service.isTimeBeetween(LocalTime.of(5, 59, 59), LocalTime.of(9, 0), LocalTime.of(6, 0));
         Assert.assertTrue(isBeetweenT);
     }
 
     @Test
     public void testIsTimeBeetweenShouldReturnFalse(){
-        Boolean isBeetweenF=service.isTimeBeetween(LocalTime.of(12, 00), LocalTime.of(13, 00), LocalTime.of(6, 0));
+        Boolean isBeetweenF=service.isTimeBeetween(LocalTime.of(12, 0), LocalTime.of(13, 0), LocalTime.of(6, 0));
         Assert.assertFalse(isBeetweenF);
     }
 
     @Test
     public void testGetPartOfDayShouldReturnMorningBegin(){
         String expected="morning";
-        String current=service.getPartOfDay(LocalTime.of(6, 00));
+        String current=service.getPartOfDay(LocalTime.of(6, 0));
         Assert.assertEquals(expected, current);
     }
 
@@ -45,7 +45,7 @@ public class ServiceTest {
     @Test
     public void testGetPartOfDayShouldReturnDayBegin(){
         String expected="day";
-        String current=service.getPartOfDay(LocalTime.of(9, 00));
+        String current=service.getPartOfDay(LocalTime.of(9, 0));
         Assert.assertEquals(expected, current);
     }
 
@@ -59,7 +59,7 @@ public class ServiceTest {
     @Test
     public void testGetPartOfDayShouldReturnEveningBegin(){
         String expected="evening";
-        String current=service.getPartOfDay(LocalTime.of(19, 00));
+        String current=service.getPartOfDay(LocalTime.of(19, 0));
         Assert.assertEquals(expected, current);
     }
 
@@ -73,21 +73,21 @@ public class ServiceTest {
     @Test
     public void testGetPartOfDayShouldReturnNightMiddle(){
         String expected="night";
-        String current=service.getPartOfDay(LocalTime.of(00, 00, 00));
+        String current=service.getPartOfDay(LocalTime.of(0, 0, 0));
         Assert.assertEquals(expected, current);
     }
 
     @Test
     public void testGetPartOfDayShouldReturnNightBegin(){
         String expected="night";
-        String current=service.getPartOfDay(LocalTime.of(23, 00));
+        String current=service.getPartOfDay(LocalTime.of(23, 0));
         Assert.assertEquals(expected, current);
     }
 
     @Test
     public void testGetPartOfDayShouldReturnNightEnd(){
         String expected="night";
-        String current=service.getPartOfDay(LocalTime.of(05, 59, 59));
+        String current=service.getPartOfDay(LocalTime.of(5, 59, 59));
         Assert.assertEquals(expected, current);
     }
 

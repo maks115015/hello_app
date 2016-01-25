@@ -13,7 +13,7 @@ public class App {
 
     public static void main( String[] args ) {
         Service service=ServiceImpl.getInstance();
-        logger.warn(service.getAnswerWithLocale());
+        logger.info(service.getAnswerWithLocale());
     }
 
 }

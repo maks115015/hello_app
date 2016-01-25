@@ -28,16 +28,16 @@ public class ServiceImpl implements Service {
 
     public String getPartOfDay(LocalTime currentTime){
         String partOfDay="";
-        if(isTimeBeetween(LocalTime.of(6,00), LocalTime.of(9, 00), currentTime))
+        if(isTimeBeetween(LocalTime.of(6,0), LocalTime.of(9, 0), currentTime))
             partOfDay="morning";
-        if(isTimeBeetween(LocalTime.of(9,00), LocalTime.of(19, 00), currentTime))
+        if(isTimeBeetween(LocalTime.of(9,0), LocalTime.of(19, 0), currentTime))
             partOfDay="day";
-        if(isTimeBeetween(LocalTime.of(19,00), LocalTime.of(23, 00), currentTime))
+        if(isTimeBeetween(LocalTime.of(19,0), LocalTime.of(23, 0), currentTime))
             partOfDay="evening";
-        if( (isTimeBeetween(LocalTime.of(23,00), LocalTime.of(23,59,59), currentTime))
-                ||(isTimeBeetween(LocalTime.of(0, 00), LocalTime.of(06, 00), currentTime)))
+        if( (isTimeBeetween(LocalTime.of(23,0), LocalTime.of(23,59,59), currentTime))
+                ||(isTimeBeetween(LocalTime.of(0, 0), LocalTime.of(6, 0), currentTime)))
             partOfDay="night";
-        logger.info("Current part of day is: {}", partOfDay);
+        logger.warn("Current part of day is: {}", partOfDay);
         return partOfDay;
     }
 
@@ -53,7 +53,7 @@ public class ServiceImpl implements Service {
 
     private LocalTime getCurrentTime(){
         LocalTime localTime=LocalTime.now();
-        logger.info("Current time is: {}", localTime.toString());
+        logger.warn("Current time is: {}", localTime.toString());
         return localTime;
     }
 }
