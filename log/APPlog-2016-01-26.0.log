@@ -1,0 +1,160 @@
+26-01-2016 00:46:01.160 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 00:46:01.257 [main] WARN  org.Service.ServiceImpl - Current time is: 00:46:01.179
+26-01-2016 00:46:01.258 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:46:01.258 [main] INFO  org.App - Доброй ночи мир!
+26-01-2016 00:46:05.187 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 00:46:05.282 [main] WARN  org.Service.ServiceImpl - Current time is: 00:46:05.204
+26-01-2016 00:46:05.282 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:46:05.282 [main] INFO  org.App - Доброй ночи мир!
+26-01-2016 00:49:12.516 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 00:49:12.612 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:49:12.615 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 00:49:12.616 [main] WARN  org.Service.ServiceImpl - Current time is: 00:49:12.616
+26-01-2016 00:49:12.616 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:49:12.616 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:49:12.616 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:49:12.617 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:49:12.619 [main] WARN  org.Service.ServiceImpl - Current locale is: en
+26-01-2016 00:49:12.619 [main] WARN  org.Service.ServiceImpl - Current time is: 00:49:12.619
+26-01-2016 00:49:12.620 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:49:12.620 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 00:49:12.621 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:49:12.621 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 00:49:12.622 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 00:49:12.623 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 00:49:12.623 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 00:54:40.479 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 00:54:40.550 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:54:40.553 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 00:54:40.553 [main] WARN  org.Service.ServiceImpl - Current time is: 00:54:40.553
+26-01-2016 00:54:40.553 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:54:40.553 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:54:40.554 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:54:40.555 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:54:40.557 [main] WARN  org.Service.ServiceImpl - Current locale is: en
+26-01-2016 00:54:40.557 [main] WARN  org.Service.ServiceImpl - Current time is: 00:54:40.557
+26-01-2016 00:54:40.557 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:54:40.558 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 00:54:40.558 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:54:40.559 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 00:54:40.559 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 00:54:40.560 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 00:54:40.560 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 00:56:38.178 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 00:56:38.249 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:56:38.252 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 00:56:38.252 [main] WARN  org.Service.ServiceImpl - Current time is: 00:56:38.252
+26-01-2016 00:56:38.252 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:56:38.253 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:56:38.253 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:56:38.254 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:56:38.257 [main] WARN  org.Service.ServiceImpl - Current locale is: en
+26-01-2016 00:56:38.257 [main] WARN  org.Service.ServiceImpl - Current time is: 00:56:38.257
+26-01-2016 00:56:38.257 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:56:38.258 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 00:56:38.258 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 00:56:38.259 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 00:56:38.260 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 00:56:38.260 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 00:56:38.261 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:10:56.140 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:10:56.286 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:10:56.288 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 01:10:56.289 [main] WARN  org.Service.ServiceImpl - Current time is: 01:10:56.288
+26-01-2016 01:10:56.289 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:10:56.289 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:10:56.290 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:10:56.291 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:10:56.293 [main] WARN  org.Service.ServiceImpl - Current locale is: en
+26-01-2016 01:10:56.293 [main] WARN  org.Service.ServiceImpl - Current time is: 01:10:56.293
+26-01-2016 01:10:56.293 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:10:56.294 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:10:56.295 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:10:56.296 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:10:56.297 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:10:56.298 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:10:56.298 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:18:28.676 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:18:28.740 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:18:28.742 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 01:18:28.742 [main] WARN  org.Service.ServiceImpl - Current time is: 01:18:28.742
+26-01-2016 01:18:28.743 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:18:28.743 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:18:28.744 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:18:28.745 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:18:28.747 [main] WARN  org.Service.ServiceImpl - Current locale is: en
+26-01-2016 01:18:28.748 [main] WARN  org.Service.ServiceImpl - Current time is: 01:18:28.748
+26-01-2016 01:18:28.748 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:18:28.748 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:18:28.749 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:18:28.749 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:18:28.749 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:18:28.750 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:18:28.750 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:21:25.657 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:21:25.761 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:21:25.764 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 01:21:25.765 [main] WARN  org.Service.ServiceImpl - Current time is: 01:21:25.765
+26-01-2016 01:21:25.765 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:21:25.766 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:21:25.767 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:21:25.768 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:21:25.770 [main] WARN  org.Service.ServiceImpl - Current locale is: en
+26-01-2016 01:21:25.771 [main] WARN  org.Service.ServiceImpl - Current time is: 01:21:25.771
+26-01-2016 01:21:25.771 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:21:25.772 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:21:25.772 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:21:25.773 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:21:25.774 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:21:25.774 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:21:25.775 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:22:42.707 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:22:42.781 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:22:42.783 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 01:22:42.784 [main] WARN  org.Service.ServiceImpl - Current time is: 01:22:42.784
+26-01-2016 01:22:42.784 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:22:42.784 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:22:42.785 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:22:42.786 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:22:42.789 [main] WARN  org.Service.ServiceImpl - Current locale is: en
+26-01-2016 01:22:42.789 [main] WARN  org.Service.ServiceImpl - Current time is: 01:22:42.789
+26-01-2016 01:22:42.790 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:22:42.793 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:22:42.793 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:22:42.794 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:22:42.795 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:22:42.796 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:22:42.796 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:28:45.418 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:28:45.489 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:28:45.491 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 01:28:45.492 [main] WARN  org.Service.ServiceImpl - Current time is: 01:28:45.492
+26-01-2016 01:28:45.492 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:28:45.492 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:28:45.493 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:28:45.494 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:28:45.495 [main] WARN  org.Service.ServiceImpl - Current locale is: en
+26-01-2016 01:28:45.495 [main] WARN  org.Service.ServiceImpl - Current time is: 01:28:45.495
+26-01-2016 01:28:45.496 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:28:45.496 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:28:45.497 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:28:45.498 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:28:45.498 [main] WARN  org.Service.ServiceImpl - Current part of day is: evening
+26-01-2016 01:28:45.499 [main] WARN  org.Service.ServiceImpl - Current part of day is: morning
+26-01-2016 01:28:45.500 [main] WARN  org.Service.ServiceImpl - Current part of day is: day
+26-01-2016 01:33:12.481 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 01:33:12.550 [main] WARN  org.Service.ServiceImpl - Current time is: 01:33:12.493
+26-01-2016 01:33:12.550 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:33:12.551 [main] INFO  org.App - ������ ���� ���!
+26-01-2016 01:35:04.575 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 01:35:04.674 [main] WARN  org.Service.ServiceImpl - Current time is: 01:35:04.593
+26-01-2016 01:35:04.674 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:35:04.675 [main] INFO  org.App - Доброй ночи мир!
+26-01-2016 01:37:56.888 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 01:37:56.954 [main] WARN  org.Service.ServiceImpl - Current time is: 01:37:56.900
+26-01-2016 01:37:56.954 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 01:37:56.955 [main] INFO  org.App - Доброй ночи мир!
+26-01-2016 02:01:56.946 [main] WARN  org.Service.ServiceImpl - Current locale is: ru
+26-01-2016 02:01:57.048 [main] WARN  org.Service.ServiceImpl - Current time is: 02:01:56.966
+26-01-2016 02:01:57.049 [main] WARN  org.Service.ServiceImpl - Current part of day is: night
+26-01-2016 02:01:57.049 [main] INFO  org.App - Доброй ночи мир!
