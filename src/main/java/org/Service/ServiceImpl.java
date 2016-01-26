@@ -28,21 +28,31 @@ public class ServiceImpl implements Service {
 
     public String getPartOfDay(LocalTime currentTime){
         String partOfDay="";
-        if(isTimeBeetween(LocalTime.of(6,0), LocalTime.of(9, 0), currentTime))
+        if(isTimeBeetween(LocalTime.of(6,0), LocalTime.of(8, 59, 59, 999), currentTime)
+                ||LocalTime.of(6,0).equals(currentTime)
+                ||LocalTime.of(8, 59, 59, 999).equals(currentTime))
             partOfDay="morning";
-        if(isTimeBeetween(LocalTime.of(9,0), LocalTime.of(19, 0), currentTime))
+        if(isTimeBeetween(LocalTime.of(9,0), LocalTime.of(18, 59, 59, 999), currentTime)
+                ||LocalTime.of(9,0).equals(currentTime)
+                ||LocalTime.of(18, 59, 59, 999).equals(currentTime))
             partOfDay="day";
-        if(isTimeBeetween(LocalTime.of(19,0), LocalTime.of(23, 0), currentTime))
+        if(isTimeBeetween(LocalTime.of(19,0), LocalTime.of(22, 59, 59, 999), currentTime)
+                ||LocalTime.of(19,0).equals(currentTime)
+                ||LocalTime.of(22, 59, 59, 999).equals(currentTime))
             partOfDay="evening";
-        if( (isTimeBeetween(LocalTime.of(23,0), LocalTime.of(23,59,59), currentTime))
-                ||(isTimeBeetween(LocalTime.of(0, 0), LocalTime.of(6, 0), currentTime)))
+        if( (isTimeBeetween(LocalTime.of(23,0), LocalTime.of(23,59,59,999), currentTime)
+                ||LocalTime.of(23,00).equals(currentTime)
+                ||LocalTime.of(23,59,59,999).equals(currentTime))
+                ||(isTimeBeetween(LocalTime.of(0, 0), LocalTime.of(5, 59, 59 ,999), currentTime))
+                ||LocalTime.of(0,0).equals(currentTime)
+                ||LocalTime.of(5, 59, 59 ,999).equals(currentTime))
             partOfDay="night";
         logger.warn("Current part of day is: {}", partOfDay);
         return partOfDay;
     }
 
     public boolean isTimeBeetween(LocalTime after, LocalTime before, LocalTime currentTime){
-        return currentTime.plusNanos(1).isAfter(after)&currentTime.isBefore(before);
+        return currentTime.isAfter(after)&currentTime.isBefore(before);
     }
 
     private ResourceBundle getResourceBundle(){
