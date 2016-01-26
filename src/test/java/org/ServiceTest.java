@@ -109,4 +109,15 @@ public class ServiceTest {
         Locale.setDefault(oldLocale);
         Assert.assertEquals(expected, current);
     }
+
+    @Test
+    public void testGetAnswerWithLocaleWithCZLocale(){
+        String currentPartOfDay=service.getPartOfDay(LocalTime.now());
+        Locale oldLocale=Locale.getDefault();
+        Locale.setDefault(Locale.forLanguageTag("cz"));
+        String expected= ResourceBundle.getBundle("message",Locale.forLanguageTag("cz")).getString(currentPartOfDay);
+        String current=service.getAnswerWithLocale();
+        Locale.setDefault(oldLocale);
+        Assert.assertEquals(expected, current);
+    }
 }
