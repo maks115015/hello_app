@@ -13,7 +13,9 @@ public class App {
 
     public static void main( String[] args ) {
         Service service=ServiceImpl.getInstance();
-        logger.info(service.getAnswerWithLocale());
+        String answer=service.getAnswerWithLocale();
+        logger.info("Output to console is: {}", answer);
+        System.out.println(answer);
     }
 
 }

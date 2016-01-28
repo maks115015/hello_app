@@ -2,4 +2,5 @@
 /.idea
 /dependency-reduced-pom.xml
 /.gitignore
+/log
 /target

@@ -17,18 +17,6 @@ public class ServiceTest {
     Service service=ServiceImpl.getInstance();
 
     @Test
-    public void testIsTimeBeetweenShouldReturnTrue(){
-        Boolean isBeetweenT=service.isTimeBeetween(LocalTime.of(5, 59, 59), LocalTime.of(9, 0), LocalTime.of(6, 0));
-        Assert.assertTrue(isBeetweenT);
-    }
-
-    @Test
-    public void testIsTimeBeetweenShouldReturnFalse(){
-        Boolean isBeetweenF=service.isTimeBeetween(LocalTime.of(12, 0), LocalTime.of(13, 0), LocalTime.of(6, 0));
-        Assert.assertFalse(isBeetweenF);
-    }
-
-    @Test
     public void testGetPartOfDayShouldReturnMorningBegin(){
         String expected="morning";
         String current=service.getPartOfDay(LocalTime.of(6, 0));
