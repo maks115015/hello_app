@@ -28,10 +28,9 @@ public class ServiceImpl implements Service {
 
     public String getPartOfDay(LocalTime currentTime){
         String partOfDay="";
-        if ((currentTime.getHour() >= 23 && currentTime.getHour() < 24)
-                ||(currentTime.getHour() >= 0 && currentTime.getHour() < 6)) {
+        if (currentTime.getHour() >= 23 || currentTime.getHour() < 6)
             partOfDay= "night";
-        } else if (currentTime.getHour() >= 6 && currentTime.getHour() < 9) {
+         else if (currentTime.getHour() >= 6 && currentTime.getHour() < 9) {
             partOfDay= "morning";
         } else if (currentTime.getHour() >= 9 && currentTime.getHour() < 19) {
             partOfDay= "day";
