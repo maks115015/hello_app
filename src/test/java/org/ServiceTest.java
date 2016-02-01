@@ -18,94 +18,76 @@ public class ServiceTest {
 
     @Test
     public void testGetPartOfDayShouldReturnMorningBegin(){
-        String expected="morning";
-        String current=service.getPartOfDay(LocalTime.of(6, 0));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("morning", getPartOfDayInString(6,0,0));
     }
 
     @Test
     public void testGetPartOfDayShouldReturnMorningEnd(){
-        String expected="morning";
-        String current=service.getPartOfDay(LocalTime.of(8, 59, 59));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("morning", getPartOfDayInString(8, 59, 59));
     }
 
     @Test
     public void testGetPartOfDayShouldReturnDayBegin(){
-        String expected="day";
-        String current=service.getPartOfDay(LocalTime.of(9, 0));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("day", getPartOfDayInString(9, 0, 0));
     }
 
     @Test
     public void testGetPartOfDayShouldReturnDayEnd(){
-        String expected="day";
-        String current=service.getPartOfDay(LocalTime.of(18, 59, 59));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("day", getPartOfDayInString(18, 59, 59));
     }
 
     @Test
     public void testGetPartOfDayShouldReturnEveningBegin(){
-        String expected="evening";
-        String current=service.getPartOfDay(LocalTime.of(19, 0));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("evening", getPartOfDayInString(19, 0,0));
     }
 
     @Test
     public void testGetPartOfDayShouldReturnEveningEnd(){
-        String expected="evening";
-        String current=service.getPartOfDay(LocalTime.of(22, 59, 59));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("evening", getPartOfDayInString(22, 59, 59));
     }
 
     @Test
     public void testGetPartOfDayShouldReturnNightMiddle(){
-        String expected="night";
-        String current=service.getPartOfDay(LocalTime.of(0, 0, 0));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("night", getPartOfDayInString(0, 0, 0));
     }
 
     @Test
     public void testGetPartOfDayShouldReturnNightBegin(){
-        String expected="night";
-        String current=service.getPartOfDay(LocalTime.of(23, 0));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("night", getPartOfDayInString(23, 0, 0));
     }
 
     @Test
     public void testGetPartOfDayShouldReturnNightEnd(){
-        String expected="night";
-        String current=service.getPartOfDay(LocalTime.of(5, 59, 59));
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals("night", getPartOfDayInString(5, 59, 59));
+    }
+
+    @Test
+    public void testGetAnswerWithLocaleENLocale(){
+        Assert.assertEquals(getExpectedAnswerForLocale(Locale.ENGLISH), service.getAnswerWithLocale());
+    }
+
+    @Test
+    public void testGetAnswerWithLocaleCZLocale(){
+        Assert.assertEquals(getExpectedAnswerForLocale(Locale.forLanguageTag("cz")), service.getAnswerWithLocale());
     }
 
     @Test
     public void testGetAnswerWithLocaleDefaultLocale(){
-        String currentPartOfDay=service.getPartOfDay(LocalTime.now());
-        String expected= ResourceBundle.getBundle("message",Locale.getDefault()).getString(currentPartOfDay);
-        String current=service.getAnswerWithLocale();
-        Assert.assertEquals(expected, current);
+        Assert.assertEquals(getExpectedAnswerForLocale(Locale.getDefault()), service.getAnswerWithLocale());
     }
 
-    @Test
-    public void testGetAnswerWithLocaleWithENLocale(){
-        String currentPartOfDay=service.getPartOfDay(LocalTime.now());
-        Locale oldLocale=Locale.getDefault();
-        Locale.setDefault(Locale.forLanguageTag("en"));
-        String expected= ResourceBundle.getBundle("message",Locale.forLanguageTag("en")).getString(currentPartOfDay);
-        String current=service.getAnswerWithLocale();
-        Locale.setDefault(oldLocale);
-        Assert.assertEquals(expected, current);
+    private String getExpectedAnswerForLocale(Locale locale){
+        Locale.setDefault(locale);
+        return ResourceBundle
+                .getBundle("message")
+                .getString(getPartOfDayInString(LocalTime.now()));
     }
 
-    @Test
-    public void testGetAnswerWithLocaleWithCZLocale(){
-        String currentPartOfDay=service.getPartOfDay(LocalTime.now());
-        Locale oldLocale=Locale.getDefault();
-        Locale.setDefault(Locale.forLanguageTag("cz"));
-        String expected= ResourceBundle.getBundle("message",Locale.forLanguageTag("cz")).getString(currentPartOfDay);
-        String current=service.getAnswerWithLocale();
-        Locale.setDefault(oldLocale);
-        Assert.assertEquals(expected, current);
+    private String getPartOfDayInString(int hour, int minute, int second){
+        return service.getPartOfDay(LocalTime.of(hour, minute,second));
+    }
+
+    private String getPartOfDayInString(LocalTime localTime){
+        return service.getPartOfDay(localTime);
     }
 }
